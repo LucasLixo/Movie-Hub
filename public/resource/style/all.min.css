@@ -1,12 +1,81 @@
-body {
-    background: #e2e2e2;
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #4d4d4d;
 }
 
-#global {
-    background: #f0f0f0;
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+    width: 15px;
 }
 
-header, footer {
+*::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #4d4d4d;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #808080;
+}
+
+/* ======================= */
+
+#Global {
+    background-color: transparent;
+}
+
+header,
+footer {
     width: 100%;
-    height: 45px;
+    height: 100px;
+}
+
+header,
+header * {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header {
+    box-shadow: #4d4d4d80 -1px 1px 10px 0px;
+}
+
+header .a1,
+header .a2 {
+    width: 50%;
+    height: 100%;
+}
+
+header .a1 {
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+header .a1 h3 {
+    text-transform: capitalize;
+}
+
+header .a1 a,
+header .a1 h4,
+header .a1 h3,
+header .a2 span {
+    cursor: pointer;
+    color: black;
+}
+
+header .a1 div {
+    height: 100%;
+}
+
+header .a2 span {
+    font-size: 45px;
+}
+
+header .a2 {
+    flex-direction: row-reverse;
+    padding-right: 35px;
 }

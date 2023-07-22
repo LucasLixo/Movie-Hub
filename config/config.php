@@ -49,9 +49,9 @@ try {
     // ============================================================
     // PROJECT
     // ============================================================
-    define('PROJECT_NAME',      'AppsByte');
+    define('PROJECT_NAME',      'SemNome');
     define('PROJECT_VERSION',   '1.8.7');
-    define('PROJECT_HTTP',      'http://localhost/Apps%20Byte/public/');
+    define('PROJECT_HTTP',      'http://localhost/Nova%20pasta/public/');
 
     // ============================================================
     // CONFIG CLASS

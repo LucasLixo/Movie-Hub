@@ -1,0 +1,23 @@
+#Global #Home {
+    width: 100%;
+    height: auto;
+}
+
+.a1-b1,
+.a1-b2,
+.a1-b3,
+.a1-b4,
+.a1-b5 {
+    position: relative;
+}
+
+.a1-b1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 3px;
+    background-color: red;
+}
