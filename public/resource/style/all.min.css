@@ -1,0 +1,12 @@
+body {
+    background: #e2e2e2;
+}
+
+#global {
+    background: #f0f0f0;
+}
+
+header, footer {
+    width: 100%;
+    height: 45px;
+}

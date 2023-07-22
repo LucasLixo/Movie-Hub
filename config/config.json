@@ -1,0 +1,18 @@
+{
+    "Config": {
+        "Crypt": {
+            "AesKey": "su1dTpkunNaQD1yjgt5e872AmzjaSvp8",
+            "AesIv": "InqYmcAYe8lLG5Ax"
+        },
+        "Get": {
+            "Referrer": [
+                "Ref",
+                "Token",
+                "Type"
+            ],
+            "Require": [
+                "Home"
+            ]
+        }
+    }
+}
