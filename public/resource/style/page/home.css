@@ -1,0 +1,91 @@
+#Global {
+    background: black;
+}
+
+#Global * {
+    color: white;
+}
+
+#Global #Home {
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+#Global #Home .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#Global #Home .container h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+#Global #Home .container strong {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#Global #Home .container .space {
+    height: 40px;
+}
+
+#text-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+#Global #Home .container div input {
+    margin-top: 25px;
+    background-color: #333;
+    border: none;
+    padding: 5px;
+    color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    font-size: 25px;
+    width: 100%;
+}
+
+#Global #Home .container div input::placeholder {
+    color: #aaa;
+}
+
+#Global #Home .container .input {
+    position: relative;
+    width: 40%;
+}
+
+#Global #Home .container .input::before {
+    position: absolute;
+    content: "Search";
+	font-family: 'Material Symbols Outlined';
+    right: 5px;
+    top: 50%;
+    font-size: 25px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+}
