@@ -17,7 +17,13 @@
                 <span>Populares</span>
                 <span>Mais Assistidos</span>
             </div>
-            <div class="context"></div>
+            <div class="context">
+                <article title="">
+                    <a href="" target="_self">
+
+                    </a>
+                </article>
+            </div>
         </div>
         <div class="session">
             <div class="options">
