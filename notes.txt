@@ -1,0 +1,14 @@
+OMDB - Data Base
+
+Key = 61ec91e
+
+http://www.omdbapi.com/?apikey=61ec91e&t=batman&y=2012&plot=full
+
+http://www.omdbapi.com/?apikey=61ec91e&s=Batman&page=2
+
+
+
+
+        /* if (!empty($variables)) {
+            $url .= '&' . http_build_query($variables);
+        } */

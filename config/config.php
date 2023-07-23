@@ -53,6 +53,8 @@ try {
     define('PROJECT_VERSION',   '1.8.7');
     define('PROJECT_HTTP',      'http://localhost/Nova%20pasta/public/');
 
+    define('URL_API',           'http://www.omdbapi.com/?apikey=61ec91e');
+
     // ============================================================
     // CONFIG CLASS
     // ============================================================

@@ -2,13 +2,11 @@
 
 include_once(dirname(__FILE__) . '/../config/config.php');
 
-require_once(dirname(__FILE__) . '/../core/code/Functions.php');
-
 use core\code\Functions;
-
-require_once(dirname(__FILE__) . '/../core/code/System.php');
-
 use core\code\System;
+
+require_once(dirname(__FILE__) . '/../core/code/Functions.php');
+require_once(dirname(__FILE__) . '/../core/code/System.php');
 
 session_start();
 
