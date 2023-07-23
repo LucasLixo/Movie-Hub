@@ -18,7 +18,7 @@ class System
         } else {
             echo $data;
         }
-
+        
         if ($die) {
             die(PHP_EOL . 'FINISHED' . PHP_EOL);
         } else {

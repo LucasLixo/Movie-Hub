@@ -7,8 +7,13 @@ http://www.omdbapi.com/?apikey=61ec91e&t=batman&y=2012&plot=full
 http://www.omdbapi.com/?apikey=61ec91e&s=Batman&page=2
 
 
+$data = [
+    's' => 'batman',
+    'page' => 3,
+    'type' => 'movie'
+];
 
-
-        /* if (!empty($variables)) {
-            $url .= '&' . http_build_query($variables);
-        } */
+$data = [
+    'i' => 'tt0707007',
+    'type' => 'movie'[movie, series, episode]
+];

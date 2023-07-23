@@ -1,21 +1,3 @@
-<?php
-
-use core\code\System;
-use core\code\Functions;
-
-require_once(dirname(__FILE__) . '/../../../code/Functions.php');
-require_once(dirname(__FILE__) . '/../../core/code/System.php');
-
-$data = [
-    't' => 'batman',
-    'page' => 3,
-];
-
-$Functions = new Functions();
-
-System::__Data($Functions->api_request($data), false);
-
-?>
 <div id="Home">
     <div class="conteiner">
         <div class="shadow">
