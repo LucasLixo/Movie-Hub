@@ -1,7 +1,7 @@
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #808080 #4d4d4d;
+    scrollbar-color: #686868 #292929;
 }
 
 /* Chrome, Edge and Safari */
@@ -12,12 +12,12 @@
 
 *::-webkit-scrollbar-track {
     border-radius: 0px;
-    background-color: #4d4d4d;
+    background-color: #292929;
 }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background-color: #808080;
+    background-color: #686868;
 }
 
 /* ======================= */
@@ -26,8 +26,9 @@
     background-color: transparent;
 }
 
-header,
-footer {
+/* HEADER */
+
+header {
     width: 100%;
     height: 100px;
 }
@@ -55,16 +56,20 @@ header .a1 {
     font-weight: bold;
 }
 
-header .a1 h3 {
-    text-transform: capitalize;
-}
-
 header .a1 a,
 header .a1 h4,
 header .a1 h3,
 header .a2 span {
     cursor: pointer;
     color: black;
+}
+
+.a1-b1,
+.a1-b2,
+.a1-b3,
+.a1-b4,
+.a1-b5 {
+    position: relative;
 }
 
 header .a1 div {
@@ -79,3 +84,12 @@ header .a2 {
     flex-direction: row-reverse;
     padding-right: 35px;
 }
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 300px;
+}
+
+/* DEFINE */

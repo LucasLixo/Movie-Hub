@@ -1,6 +1,6 @@
 <header>
     <div class="a1">
-        <h3><a href="<?= PROJECT_HTTP ?>" target="_self"><?= PROJECT_NAME ?></a></h3>
+        <h3><a href="<?= PROJECT_HTTP ?>" target="_self"><?= PROJECT_NAME ?></a><sub>.com</sub></h3>
         <div class="a1-b1">
             <h4>Inicio</h4>
         </div>

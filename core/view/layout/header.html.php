@@ -15,10 +15,6 @@
         html {
             display: none;
         }
-        
-        * {
-            outline: 0.5px solid red;
-        }
     </style>
 </head>
 
