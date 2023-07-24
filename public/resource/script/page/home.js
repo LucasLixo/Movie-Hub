@@ -48,9 +48,18 @@ $(document).ready(function () {
     }
 
     cycleText();
-
     // ============================================================
     $('#search::before').on('click', function () {
         $('#myForm').submit();
+    });
+
+    // ============================================================
+    $('#Home .content iframe').on('load', function () {
+        $(this).contents().find('a').click(function (event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+
+            var LinkHref = $(this).attr('href'); // Obtém o atributo href do link clicado
+            $('#Home .content iframe').attr('src', LinkHref); // Define a nova URL do iframe
+        });
     });
 });

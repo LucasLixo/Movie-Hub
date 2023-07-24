@@ -23,7 +23,8 @@ if ($results['Response'] == "False") {
                     <?php
                     
                     $url = PROJECT_HTTP . '?' . RefPrimary . '=' . ReqTertiarty;
-                    $url .= '&Movie=' . $Functions->__AesEncrypt($result['imdbID']);
+                    $url .= '&I=' . $Functions->__AesEncrypt($result['imdbID']);
+                    $url .= '&Type=' . $Functions->__AesEncrypt($result['Type']);
 
                     ?>
                     <a href="<?= $url ?>">

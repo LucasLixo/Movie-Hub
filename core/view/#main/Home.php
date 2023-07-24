@@ -15,6 +15,6 @@
         </div>
     </div>
     <div class="content">
-        <iframe src="<?= PROJECT_HTTP . '?' . RefPrimary . '=' . ReqSecundary ?>" scrolling="no" sandbox="allow-scripts" frameborder="0" allow="fullscreen"></iframe>
+        <iframe src="<?= PROJECT_HTTP . '?' . RefPrimary . '=' . ReqSecundary ?>" scrolling="no" frameborder="0" allow="fullscreen"></iframe>
     </div>
 </div>

@@ -12,9 +12,9 @@
         <?php endforeach; ?>
     <?php endif; ?>
     <style>
-        html {
+        /* html {
             display: none;
-        }
+        } */
     </style>
 </head>
 
