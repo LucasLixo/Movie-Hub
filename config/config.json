@@ -11,7 +11,9 @@
                 "Type"
             ],
             "Require": [
-                "Home"
+                "Home",
+                "Iframe",
+                "Player"
             ]
         }
     }

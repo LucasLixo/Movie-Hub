@@ -25,9 +25,39 @@ class Main
 
         $array = [
             'layout/header.html',
-            'layout/header',
+            // 'layout/header',
             '#main/Home',
-            'layout/footer',
+            // 'layout/footer',
+            'layout/footer.html',
+        ];
+
+        System::layout($array, $this->data);
+    }
+    
+    // ============================================================
+    public function Iframe()
+    {
+        $this->data['css'][] = 'page/Iframe.css';
+        $this->data['js'][] = 'page/Iframe.js';
+
+        $array = [
+            'layout/header.html',
+            '#main/Iframe',
+            'layout/footer.html',
+        ];
+
+        System::layout($array, $this->data);
+    }
+    
+    // ============================================================
+    public function Player()
+    {
+        $this->data['css'][] = 'page/Player.css';
+        $this->data['js'][] = 'page/Player.js';
+
+        $array = [
+            'layout/header.html',
+            '#main/Player',
             'layout/footer.html',
         ];
 

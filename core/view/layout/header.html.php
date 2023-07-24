@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="icon" href="" type="image/svg+xml">
+    <link rel="icon" href="./resource/image/logo.png" type="image/png">
     <title><?= PROJECT_NAME ?></title>
     <?php if (isset($css) && !empty($css)) : ?>
         <?php foreach ($css as $c) : ?>

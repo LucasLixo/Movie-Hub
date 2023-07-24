@@ -5,6 +5,8 @@ require_once('../core/controller/Main.php');
 $routs = [
     // MAIN 
     ReqPrimary => 'main@home',
+    ReqSecundary => 'main@iframe',
+    ReqTertiarty => 'main@player',
 ];
 
 // STANDARD

@@ -1,46 +1,56 @@
-// script.js
-$(document).ready(function() {
-    const texts = [
-        "Texto 1. Digite seu texto aqui.",
-        "Texto 2. Outro texto a ser digitado.",
-        "Texto 3. Mais um texto para digitar."
-    ]; // Textos a serem digitados em sequência
-    const typingDelay = 100; // Atraso em milissegundos entre cada caractere
-    const erasingDelay = 50; // Atraso em milissegundos entre cada apagamento de caractere
-    const switchDelay = 3000; // Atraso em milissegundos para trocar para o próximo texto
-    let textIndex = 0; // Índice do texto atual
-    let charIndex = 0; // Índice do caractere atual
-    let isErasing = false; // Indica se está apagando o texto
+$(document).ready(function () {
+    // Array com os textos que serão digitados
+    var texts = [
+        "Texto 1",
+        "Texto 2",
+        "Texto 3",
+        "Texto 4"
+    ];
 
-    const placeholder = $("#text-placeholder");
+    var currentTextIndex = 0;
+    var typingDelay = 100; // Velocidade da digitação (em milissegundos)
+    var erasingDelay = 50; // Velocidade da exclusão (em milissegundos)
+    var pauseDelay = 3000; // Tempo de pausa após a digitação completa (em milissegundos)
 
-    function typeText() {
-        const currentText = texts[textIndex];
+    var typingContainer = $('#text-placeholder');
 
-        if (isErasing) {
-            // Apagando o texto
-            if (charIndex >= 0) {
-                placeholder.text(currentText.slice(0, charIndex));
-                charIndex--;
-                setTimeout(typeText, erasingDelay);
-            } else {
-                // Quando terminar de apagar, aguarda e começa a digitar novamente
-                isErasing = false;
-                setTimeout(typeText, switchDelay);
-            }
+    function typeText(text, index, callback) {
+        if (index < text.length) {
+            typingContainer.append(text.charAt(index));
+            setTimeout(function () {
+                typeText(text, index + 1, callback);
+            }, typingDelay);
         } else {
-            // Digitando o texto
-            if (charIndex < currentText.length) {
-                placeholder.text(currentText.slice(0, charIndex + 1));
-                charIndex++;
-                setTimeout(typeText, typingDelay);
-            } else {
-                // Quando terminar de digitar, inicia o apagamento
-                isErasing = true;
-                setTimeout(typeText, typingDelay);
-            }
+            setTimeout(callback, pauseDelay);
         }
     }
 
-    typeText();
+    function eraseText(callback) {
+        var text = typingContainer.text();
+        if (text.length > 0) {
+            typingContainer.text(text.slice(0, -1));
+            setTimeout(function () {
+                eraseText(callback);
+            }, erasingDelay);
+        } else {
+            setTimeout(callback, typingDelay);
+        }
+    }
+
+    function cycleText() {
+        var text = texts[currentTextIndex];
+        typeText(text, 0, function () {
+            eraseText(function () {
+                currentTextIndex = (currentTextIndex + 1) % texts.length;
+                cycleText();
+            });
+        });
+    }
+
+    cycleText();
+
+    // ============================================================
+    $('#search::before').on('click', function () {
+        $('#myForm').submit();
+    });
 });

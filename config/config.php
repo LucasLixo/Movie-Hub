@@ -45,6 +45,8 @@ try {
 
     // REQUIRE
     define('ReqPrimary',                $Json->Get->Require[0]);
+    define('ReqSecundary',              $Json->Get->Require[1]);
+    define('ReqTertiarty',              $Json->Get->Require[2]);
 
     // ============================================================
     // PROJECT

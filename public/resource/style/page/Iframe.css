@@ -1,0 +1,61 @@
+#Global {
+    background: black;
+}
+
+#Global * {
+    color: white;
+}
+
+#Global #Iframe {
+    display: block;
+    width: 100%;
+}
+
+#Global .container {
+    padding: 25px;
+}
+
+
+/* CARD */
+#Global .container .movies {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Global .container .movies article {
+    margin: 25px;
+}
+
+#Global .container .movies article,
+#Global .container .movies article a {
+    width: 170px;
+    height: 240px;
+    display: block;
+    border-radius: 5px;
+}
+
+#Global .container .movies article a {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Global .container .movies article a h5 {
+    padding: 2px 3px;
+    background: #0f0f0fd0;
+    border-radius: 5px;
+    margin: 3px;
+    font-weight: 500;
+}
+
+#Global .container .movies article a div {
+    width: 100%;
+    height: auto;
+    color: white;
+    background: linear-gradient(to top, black, transparent);
+    text-align: center;
+}
