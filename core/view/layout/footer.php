@@ -1,4 +1,3 @@
-<hr>
 <footer>
     <div id="FooterMenu">
         <a href="https://www.omdbapi.com/" target="_blank" rel="noopener noreferrer">
