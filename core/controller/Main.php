@@ -27,7 +27,7 @@ class Main
             'layout/header.html',
             // 'layout/header',
             '#main/Home',
-            // 'layout/footer',
+            'layout/footer',
             'layout/footer.html',
         ];
 

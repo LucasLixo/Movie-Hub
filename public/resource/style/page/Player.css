@@ -13,8 +13,15 @@
     justify-content: flex-start;
 }
 
+#Global #Player .container  .context {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #Global #Player .container #PlayerEmbed, 
 #Global #Player .container #PlayerEmbed iframe{
-    width: 100%;
-    height: 600px;
+    width: 720px;
+    height: 480px;
 }

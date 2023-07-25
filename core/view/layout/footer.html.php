@@ -1,4 +1,4 @@
-    </div>
+    </aside>
     <?php if (isset($js) && !empty($js)) : ?>
         <?php foreach ($js as $j) : ?>
             <script type="application/javascript" src="./resource/script/<?= $j ?>"></script>

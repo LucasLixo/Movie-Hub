@@ -23,7 +23,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: 700px;
-    background: url(https://vizer.in/content/movies/background/1280/39487.webp);
+    background: url(https://<?= PROJECT_NAME ?>.in/content/movies/background/1280/39487.webp);
     background-size: cover;
 }
 

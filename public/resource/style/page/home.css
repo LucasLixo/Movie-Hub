@@ -1,14 +1,5 @@
-#Global {
-    background: black;
-}
-
-#Global * {
-    color: white;
-}
-
+#Global,
 #Global #Home {
-    width: 100%;
-    height: auto;
     background: black;
 }
 
@@ -18,17 +9,23 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 #Global #Home .container h1 {
     font-size: 4.5rem;
     font-weight: bold;
+    background-color: rgb(0, 58, 176);
+    background-image: linear-gradient(45deg, rgb(0, 47, 63) 20%, rgb(255, 255, 255) 52%, rgb(0, 94, 146) 95%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #Global #Home .container strong {
     font-size: 2.5rem;
     text-align: center;
+    color: white;
 }
 
 #Global #Home .container .div-space {
@@ -54,47 +51,97 @@
     }
 }
 
-#Global #Home .container .div-input #search {
-    margin-top: 25px;
+/* Iframe */
+#Global #Home .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+#Global #Home .content iframe {
+    border: none;
+    height: 655px;
+}
+
+/* INPUT SEARCH */
+#Global #Home .container .div-input #search-form #search {
     background-color: #333;
     border: none;
     padding: 5px;
     color: #f0f0f0;
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     outline: none;
     font-size: 25px;
-    width: 100%;
 }
 
-#Global #Home .container .div-input #search::placeholder {
+#Global #Home .container .div-input #search-form #search::placeholder {
     color: #aaa;
 }
 
 #Global #Home .container .div-input {
     position: relative;
-    width: 40%;
+    width: 90%;
 }
 
-#Global #Home .container .div-input::before {
+/* SELECT */
+#Global #Home .container .div-input #search-form #type {
+    background-color: #333;
+    border: none;
+    padding: 5px;
+    color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    width: 100%;
+    font-size: initial;
+}
+
+#Global #Home .container .div-input #search-form #type option {
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: initial;
+}
+
+#Global #Home .container .div-input #search-form #type::before {
+    content: "\25BC";
     position: absolute;
-    content: "Search";
-    font-family: 'Material Symbols Outlined';
-    right: 5px;
     top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     font-size: 25px;
+    color: #f0f0f0;
+    pointer-events: none;
+}
+
+/* SUBMIT */
+#Global #Home .container .div-input #search-form #submit {
+    background-color: #333;
+    border: none;
+    padding: 10px 15px;
+    color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
     cursor: pointer;
 }
 
-/* Iframe */
-#Global #Home .content {
-    width: 100%;
-    height: 500px;
-    background: black;
-    padding: auto;
+#Global #Home .container .div-input #search-form #submit:hover {
+    background-color: #444;
 }
 
-#Global #Home .content iframe {
-    width: 100%;
-    height: 100%;
+/* FORM */
+#Global #Home .container .div-input #search-form {
+    display: flex;
+}
+
+#Global #Home .container .div-input #search-form #type {
+    width: 10%;
+}
+
+#Global #Home .container .div-input #search-form #search {
+    width: 85%;
+}
+
+#Global #Home .container .div-input #search-form #submit {
+    width: 5%;
 }

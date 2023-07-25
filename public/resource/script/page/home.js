@@ -1,10 +1,9 @@
 $(document).ready(function () {
     // Array com os textos que serão digitados
     var texts = [
-        "Texto 1",
-        "Texto 2",
-        "Texto 3",
-        "Texto 4"
+        "Pesquise qualquer filme, serie ou anime",
+        "Nada aparece? tenta pesquisar em inglês",
+        "Todo conteudo dublado ou legendado",
     ];
 
     var currentTextIndex = 0;
@@ -48,10 +47,6 @@ $(document).ready(function () {
     }
 
     cycleText();
-    // ============================================================
-    $('#search::before').on('click', function () {
-        $('#myForm').submit();
-    });
 
     // ============================================================
     $('#Home .content iframe').on('load', function () {

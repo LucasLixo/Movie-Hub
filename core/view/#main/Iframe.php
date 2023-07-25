@@ -5,9 +5,12 @@ use core\code\System;
 
 $Functions = new Functions;
 
+$type = $_GET['type'];
+$search = $_GET['search'];
+
 $results = $Functions->api_request([
-    's' => 'batman',
-    'type' => 'movie',
+    's' => $search,
+    'type' => $type,
 ]);
 
 if ($results['Response'] == "False") {
@@ -37,7 +40,7 @@ if ($results['Response'] == "False") {
             <?php } ?>
         </div>
         <div class="page">
-            <h4><?= floor($results['totalResults'] / 10) ?></h4>
+            <h4><?= floor($results['totalResults'] / 10) ?> Paginas Restantes</h4>
         </div>
     </div>
 </div>
