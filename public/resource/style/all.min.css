@@ -46,7 +46,7 @@ footer #FooterMenu {
     height: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 footer #FooterMenu a {
