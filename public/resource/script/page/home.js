@@ -1,9 +1,9 @@
 $(document).ready(function () {
     // Array com os textos que serão digitados
     var texts = [
-        "Pesquise qualquer filme, serie ou anime",
-        "Nada aparece? tenta pesquisar em inglês",
-        "Todo conteudo dublado ou legendado",
+        "Pesquise qualquer filme, serie ou anime!",
+        "Todo conteudo dublado ou legendado!",
+        "Nada aparece? tente pesquisar em inglês.",
     ];
 
     var currentTextIndex = 0;
