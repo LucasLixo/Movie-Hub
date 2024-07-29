@@ -1,5 +1,5 @@
-# Movie.hub
+# Movie Hub
 
-alter local Movie.hub
+alter local Movie Hub
 
 https://github.com/LucasLixo/movie.hub.git
